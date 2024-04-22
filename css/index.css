@@ -15,7 +15,7 @@
 header{
     width: 100%;
     padding: 10px;
-    background: url(/assets/bg.png) no-repeat;
+    background: url('/minia/assets/bg.png') no-repeat;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,14 +43,14 @@ header{
 #menu-icon{
     display: none;
 }
-.bx-menu, .bxs-cog{
+.bx-menu, .bxs-cog, .bx-x{
     font-size: 24px;
     padding: 5px;
     cursor: pointer;
-    color: blue;
+    color: #2910C6;
 }
 .container{
-    background: url(/assets/bg.png) no-repeat;
+    background: url(/minia/assets/bg.png) no-repeat;
     height: 100vh;
 }
 .container h1{
@@ -90,7 +90,7 @@ button{
     display: flex;
     column-gap: 0.5rem;
     cursor: pointer;
-    background-color: blue;
+    background-color: #2910C6;
     border: none;
     outline: none;
     color: white;
@@ -146,10 +146,12 @@ button{
     border-radius: 5px;
     padding: 8px 10px;
     width: 300px;
+    margin-bottom: 10px;
 }
 .drop-down select{
     border: none;
     outline: none;
+    background: none;
 }
 .filter{
     padding: 5px;
@@ -216,6 +218,10 @@ tr:hover {
     border-radius: 25px;
     margin-bottom: 10px;
 }
+.blog-box p{
+    color: white;
+}
+
 @media(max-width:900px){
     .coins-sec img{
         width: 90px;
@@ -237,10 +243,12 @@ tr:hover {
         height: 100%;
         position: fixed;
         text-align: center;
-        background-color: hsla(0, 68%, 39%, 1);
-        top: 60px;
-        right: -100%;
+        background-color: white;
+        top: 8px;
+        left: -100%;
         transition: all 0.4s ease-in-out;
+        margin-top: -8px;
+        z-index: 999;
     }
     .navbar li{
         padding: 20px 0;
@@ -268,7 +276,6 @@ tr:hover {
         font-size: 28px;
     }
 }
-
 @media(max-width:650px){
     .home-img{
         display: none;

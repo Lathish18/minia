@@ -4,8 +4,8 @@ function navFunction() {
   isOpened = !isOpened; 
 
   if (isOpened) {
-    navBar.style.right = '-100%'; 
+    navBar.style.left = '-100%'; 
   } else {
-    navBar.style.right = '0'; 
+    navBar.style.left = '0'; 
   }
 }
