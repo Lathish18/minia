@@ -1,10 +1,46 @@
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Medium.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Heavy.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Ultra.ttf");
+    font-weight: 100;
+}
+
 *{
     padding: 0;
     margin: 0;
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'Neue Power', sans-serif;
+    font-family: Neue Power;
 }
 body{
     background: url(../assets/bg.png) no-repeat;
@@ -67,21 +103,25 @@ header{
     height: 380px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(0px 0px 3px rgba(0,0,0,0.23 ));
 }
 .sell-sec h2{
     margin-bottom: 10px;
     font-size: 30px;
+    color: #2910C6;
 }
 .sell-sec p{
     margin-bottom: 20px;
+    color: #121C28;
 }
 .input-box{
     width: 300px;
     position: relative;
     margin-bottom: 10px;
 }
-
+::placeholder{
+    color: #A9A9A9;
+}
 input{
     width: 100%;
     padding: 10px;
@@ -134,6 +174,7 @@ button{
 .faq-sec h2{
     font-size: 35px;
     margin-bottom: 10px;
+    color:   #121c28;
 }
 .bxs-right-arrow{
     color: #2910C6;

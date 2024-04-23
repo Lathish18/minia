@@ -40,7 +40,6 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-    color: black;
     font-family: Neue Power;
 }
 ::-webkit-scrollbar{
@@ -48,6 +47,7 @@
 }
 .container{
     width: 100%;
+    height: 100%;
     padding: 30px 50px;
     background: url(../assets/bg.png);
 }
@@ -55,12 +55,14 @@
     display: flex;
     column-gap: 0.5rem;
     margin-bottom: 50px;
+    align-items: center;
+    margin-left: 8%;
 }
 .logo img{
-    width: 50px;
+    width: 35px;
 }
 .logo h2{
-    color: #2910C6;
+    color: #121C28;
     margin-top: 8px;
 }
 .login-sec{
@@ -71,14 +73,17 @@
 .login-sec h2{
     font-size: 35px; 
     margin-bottom: 10px;
+    color: #121C28;
 }
 .login-sec p{
     font-size: 22px;
     margin-bottom: 10px;
+    color: #818384;
 }
 .login-sec h4{
     font-size: 20px;
     margin-bottom: 10px;
+    color: #818384;
 }
 .login-img img{
     width: 400px;
@@ -93,7 +98,7 @@ input{
     width: 300px;
 }
 ::placeholder{
-    color: black;
+    color: #A7A7A7;
 }
 .eye{
     width: 17px;
@@ -106,7 +111,7 @@ button{
     display: flex;
     column-gap: 0.5rem;
     cursor: pointer;
-    background-color: #2910C6;
+    background-color: #4422EF;
     border: none;
     outline: none;
     color: white;

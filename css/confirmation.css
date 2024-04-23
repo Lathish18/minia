@@ -1,8 +1,43 @@
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Medium.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Heavy.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Ultra.ttf");
+    font-weight: 100;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Neue Power', sans-serif;
+    font-family: Neue Power;
 }
 .container{
     width: 100%;
@@ -17,7 +52,7 @@
     border-radius: 10px;
     text-align: center;
     padding: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .box h2, .box p{
     padding: 8px;
@@ -27,6 +62,7 @@
 }
 .box p{
     margin-bottom: 10px;
+    color: #121c28;
 }
 .icon{
     text-align: right;
@@ -34,6 +70,7 @@
 }
 .bx{
     font-size: 24px;
+    color: #5447a4;
 }
 button{
     padding: 10px 20px;
@@ -46,6 +83,7 @@ button{
     margin: auto;
     width: 200px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .btn-1{
     background-color: #2910C6;

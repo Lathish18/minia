@@ -40,8 +40,8 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    color: #121C28;
     scroll-behavior: smooth;
-    color: black;
     font-family: Neue Power;
 }
 
@@ -103,6 +103,7 @@ header {
 
 .container h1 {
     padding: 20px 0 20px 40px;
+    color: #121C28;
 }
 
 .balance-container {
@@ -119,6 +120,7 @@ header {
 .balance-sec p {
     font-size: 18px;
     padding: 8px 0;
+    color: #121C28;
 }
 
 .balance {
@@ -183,6 +185,7 @@ button {
 
 .rate-container h2 {
     font-size: 35px;
+    color: #121C28;
 }
 
 .sell-sec {
@@ -228,7 +231,7 @@ input {
 }
 
 ::placeholder {
-    color: black;
+    color: #A9A9A9;
 }
 
 .filter {
@@ -280,6 +283,7 @@ tr:hover {
     text-align: left;
     font-size: 30px;
     margin-bottom: 20px;
+    color: #121C28;
 }
 
 .blog-sec {
@@ -310,7 +314,7 @@ tr:hover {
 }
 
 .blog-box p {
-    color: white;
+    color: #EEF2FF;
 }
 
 @media(max-width:900px) {

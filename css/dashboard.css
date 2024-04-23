@@ -1,6 +1,11 @@
 .title{
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+    color: #121C28;
+}
+.title h2{
+    font-size: 35px;
+    color:  #121c28;
 }
 .deposit-container{
     padding: 20px;
@@ -11,6 +16,7 @@
     font-size: 35px;
     padding: 20px;
     text-align: center;
+    color: #121C28;
 }
 .deposit-sec{
     display: flex;
@@ -23,8 +29,14 @@
     border-radius: 10px;
     text-align: center;
 }
+.deposit p{
+    color:  #000000;
+}
 .qr{
     width: 150px;
+}
+::placeholder{
+    color: #a9a9a9;
 }
 .deposit-btn{
     width: 100%;
@@ -33,17 +45,19 @@
     font-size: 20px;
 }
 .howto-deposit h2{
-    font-size: 40px;
+    font-size: 35px;
+    text-align: left;
 }
 .howto-deposit p{
     font-size: 20px;
     padding: 10px;
+    color: #000000;
 }
 .howto-deposit p i{
     margin-right: 5px;
 }
 .bx{
-    color: #2910C6;
+    color: #4422EF;
 }
 input{
     padding: 3px;

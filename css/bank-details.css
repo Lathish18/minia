@@ -1,6 +1,42 @@
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Medium.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Heavy.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Ultra.ttf");
+    font-weight: 100;
+}
 *{
     padding: 0;
     margin: 0;
+    font-family: Neue Power;
 }
 ::-webkit-scrollbar{
     display: none;
@@ -24,6 +60,7 @@
 }
 .bx{
     font-size: 24px;
+    color: #5447A4;
 }
 h2{
     color: #2910C6;
@@ -32,11 +69,10 @@ h2{
 }
 h3{
     margin-bottom: 10px;
-    margin-left: 45px;
 }
 .input-box{
     border: 1px solid #2910c6;
-    width: 100%;
+    width: 97%;
     padding: 5px;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -58,6 +94,9 @@ select{
     border: none;
     outline: none;
     cursor: pointer;
+}
+::placeholder{
+    color: #a9a9a9;;
 }
 button{
     padding: 10px 20px;

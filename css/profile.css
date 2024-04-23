@@ -1,3 +1,38 @@
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Medium.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Heavy.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Ultra.ttf");
+    font-weight: 100;
+}
 *{
     margin: 0;
     padding: 0;
@@ -5,10 +40,10 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-    font-family: 'Neue Power', sans-serif;
+    font-family: Neue Power;
 }
 body{
-    background: url(/assets/bg.png) no-repeat;
+    background: url(../assets/bg.png) no-repeat;
     object-fit: cover;
 }
 ::-webkit-scrollbar{
@@ -58,7 +93,7 @@ header{
     background-color: #eef2ff;
     padding: 20px 10px;
     border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: block;
     margin: auto;
 }
@@ -134,6 +169,9 @@ button{
     border-radius: 8px;
     width: 160px;
     margin-bottom: 10px;
+}
+::placeholder{
+    color: #a9a9a9;
 }
 .btn{
     display: flex;
