@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/profile.css">
+    <title>Profile</title>
+</head>
+<body>
+    <header>
+        <div><img src="assets/dashboard.png" alt="logo" class="logo"></div>
+        <ul class="navbar" id="navBar">
+            <li><a href="#">Sell USDT</a></li>
+            <li><a href="#">Deposit USDT</a></li>
+            <li><a href="#">Fiat Withdrawal</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><i class="bx bx-x" id="menu-icon" onclick="navFunction()"></i></li>
+        </ul>
+        <div class="icons">
+            <i class='bx bxs-cog'></i>
+            <i class="bx bx-menu" id="menu-icon" onclick="navFunction()"></i>
+        </div>
+    </header>
+    <div class="box">
+        <div class="circle-img">
+            <div class="circle"></div>
+            <i class='bx bx-pencil'></i>
+        </div>
+        <div class="input-box parent-box">
+            <div class="child-box">
+                <input type="text" placeholder="First Name">
+            </div>
+            <div class="child-box">
+                <input type="text" placeholder="Last Name">
+            </div>
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="Email address">
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="Home address">
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="Contact number">
+        </div>
+        <div class="input-box parent-box">
+            <div class="child-box">
+                <input type="text" placeholder="City">
+                <select name="" id="">
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="child-box">
+                <input type="text" placeholder="State">
+                <select name="" id="">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+        <div class="input-box parent-box">
+            <div class="child-box">
+                <input type="text" placeholder="Bank details">
+                <select name="" id="">
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="child-box">
+                <input type="text" placeholder="Add 2FA">
+            </div>
+        </div>
+        <div class="btn">
+            <button class="btn-1">Cancel</button>
+            <button class="btn-2">Update</button>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

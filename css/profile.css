@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Neue Power';
+    
+}
+body{
+    background: url(/assets/bg.png) no-repeat;
+    object-fit: cover;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+header{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+    margin-bottom: 40px;
+}
+.logo{
+    width: 30px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+.navbar a{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #121C28;
+}
+.navbar a:hover{
+    color: #2910C6;
+}
+.icons{
+    display: flex;
+}
+#menu-icon{
+    display: none;
+}
+.bx-menu, .bxs-cog, .bx-x{
+    font-size: 24px;
+    padding: 5px;
+    cursor: pointer;
+    color: #2910C6;
+}
+.box{
+    width: 500px;
+    height: auto;
+    background-color: #eef2ff;
+    padding: 20px 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: block;
+    margin: auto;
+}
+.circle-img{
+    text-align: center;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.circle{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    border: 1px solid #2910C6;
+    background-color: white;
+}
+.bx-pencil{
+    background-color: #2910C6;
+    color: white;
+    padding: 3px;
+    border-radius: 50%;
+    position: relative;
+    left: -40px;
+    top: 0;
+}
+.input-box{
+    border: 1px solid #2910c6;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 8px;
+    display: flex;
+    margin-bottom: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.parent-box{
+    background: none!important;
+    border: none!important;
+}
+.child-box{
+    border: 1px solid #2910c6;
+    width: 220px;
+    border-radius: 8px;
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    padding: 5px;
+    width: 240px;
+    border: none;
+    outline: none;
+    background: none;
+}
+select{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button{
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 8px;
+    width: 160px;
+    margin-bottom: 10px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-1{
+    background-color:  #c61022;
+}
+.btn-2{
+    background-color: #2910c6;
+}
+
+@media(max-width:800px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        display: block;
+        width: 50%;
+        height: 100%;
+        position: fixed;
+        text-align: center;
+        background-color: white;
+        top: 8px;
+        right: -100%;
+        transition: all 0.4s ease-in-out;
+        margin-top: -8px;
+        z-index: 999;
+    }
+    .navbar li{
+        padding: 20px 0;
+    }
+}
+
+@media(max-width:580px){
+    .box{
+        width: 90%;
+    }
+    .input-box{
+        width: 100%;
+    }
+    .parent-box{
+        display: block;
+    }
+    .child-box{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+@media(max-width:400px){
+    .circle{
+        width: 100px;
+        height: 100px;
+    }
+    .btn{
+        display: block;
+    }
+    button{
+        width: 100%;
+    }
+}

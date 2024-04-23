@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Dashboard-1</title>
+</head>
+<body>
+    <header>
+        <div><img src="assets/dashboard.png" alt="logo" class="logo"></div>
+        <ul class="navbar" id="navBar">
+            <li><a href="#">Sell USDT</a></li>
+            <li><a href="#">Deposit USDT</a></li>
+            <li><a href="#">Fiat Withdrawal</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><i class="bx bx-x" id="menu-icon" onclick="navFunction()"></i></li>
+        </ul>
+        <div class="icons">
+            <i class='bx bxs-cog'></i>
+            <i class="bx bx-menu" id="menu-icon" onclick="navFunction()"></i>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Grow your crypto portfolio <br> start by depositing USDT now.</h1>
+        <div class="balance-container">
+            <img src="assets/home-1.png" alt="" class="home-img">
+            <div class="balance-sec">
+                <p>Available Balance</p>
+                <div class="balance">
+                    <img src="assets/t.png" alt="T">
+                    <h2>1236.56$ <span style="color: #2910C6;">USDT</span></h2>
+                </div>
+                <div style="display: flex; column-gap: 1rem; padding-bottom: 20px;">
+                    <button><i class='bx bxs-up-arrow' style="color: white;"></i>Sell</button>
+                    <button><i class='bx bxs-down-arrow' style="color: white;"></i>Deposit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="deposit-container">
+        <h2>Deposit USDT</h2>
+        <div class="deposit-sec">
+            <div class="deposit">
+                <img src="assets/qr code.png" alt="QR" class="qr">
+                <p style="padding: 10px;">Scan QR code to deposit USDT</p>
+                <div class="">
+                    <div>
+                        <div class="drop-down">
+                            <input type="text" placeholder="Wallet Address">
+                            <img src="assets/copy.png" alt="" width="15px">
+                        </div>
+                    <div>
+                        <div class="drop-down">
+                            <input type="text" placeholder="Enter Amount">
+                            <select name="coins" id="">
+                                <option value=""><i class='bx bxs-dollar-circle'></i>USD</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="drop-down">
+                            <p>Payment Method</p>
+                            <select name="coins" id="">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="deposit-btn">Deposit</button>
+                    <p style="padding: 10px;">Your INR wallet balance is 0 INR</p>
+                    <p>Your USDT wallet balance is 0</p>
+                </div>
+            </div>
+        </div>
+        <div class="howto-deposit">
+            <h2>How to <span style="color: #2910C6;">Deposit</span> <br> USDT in wallet?</h2>
+            <p><i class='bx bxs-right-arrow'></i>Scan QR Code or add wallet address</p>
+            <p><i class='bx bxs-right-arrow'></i>Enter specific amount in your currency</p>
+            <p><i class='bx bxs-right-arrow'></i>Select a payment method</p>
+            <p><i class='bx bxs-right-arrow'></i>Add payment details if not added</p>
+            <p><i class='bx bxs-right-arrow'></i>Click <span style="color: #2910C6;">deposit</span> to get USDT in wallet</p>
+        </div>
+    </div>
+    <div class="blog-container">
+        <h2>Our Daily <span style="color: #2910C6;">Blogs</span></h2>
+        <div class="blog-sec">
+            <div class="blog-box">
+                <div class="blog"></div>
+                <p>"Crypto and Taxes: Navigating the Regulatory Landscape"</p>
+                <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+                    <p>USDT Minia</p>
+                    <p>2hr Ago</p>
+                </div>
+            </div>
+            <div class="blog-box">
+                <div class="blog"></div>
+                <p>"Crypto and Taxes: Navigating the Regulatory Landscape"</p>
+                <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+                    <p>USDT Minia</p>
+                    <p>2hr Ago</p>
+                </div>
+            </div>
+            <div class="blog-box">
+                <div class="blog"></div>
+                <p>"Crypto and Taxes: Navigating the Regulatory Landscape"</p>
+                <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+                    <p>USDT Minia</p>
+                    <p>2hr Ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -15,7 +15,7 @@
 header{
     width: 100%;
     padding: 10px;
-    background: url('/minia/assets/bg.png') no-repeat;
+    background: url('/assets/bg.png') no-repeat;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -50,7 +50,7 @@ header{
     color: #2910C6;
 }
 .container{
-    background: url(/minia/assets/bg.png) no-repeat;
+    background: url(/assets/bg.png) no-repeat;
     height: 100vh;
 }
 .container h1{
@@ -153,12 +153,21 @@ button{
     outline: none;
     background: none;
 }
+input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+::placeholder{
+    color: black;
+}
 .filter{
-    padding: 5px;
+    padding: 2px 5px;
+    height: 35px;
     border: 1px solid blue;
     border-radius: 5px;
 }
-.filter i{
+.bx-filter-alt{
     margin-top: 5px;
 }
 .table-container{
@@ -245,7 +254,7 @@ tr:hover {
         text-align: center;
         background-color: white;
         top: 8px;
-        left: -100%;
+        right: -100%;
         transition: all 0.4s ease-in-out;
         margin-top: -8px;
         z-index: 999;
@@ -302,5 +311,37 @@ tr:hover {
     }
     .sell-sec h2{
         font-size: 22px;
+    }
+    .blog-container{
+        padding: 20px;
+    }
+}
+@media(max-width:400px){
+    .blog-box{
+        width: 100%;
+        padding: 15px;
+        height: auto;
+    }
+    .blog{
+        width: 90%;
+    }
+    .blog-box P{
+        font-size: 13px;
+    }
+}
+@media(max-width:310px){
+    .blog-box{
+        height: auto;
+    }
+    .blog{
+        height: 100px;
+    }
+}
+@media(max-width:250px){
+    .blog-box P{
+        font-size: 10px;
+    }
+    .blog{
+        width: 100%;
     }
 }
