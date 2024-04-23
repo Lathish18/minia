@@ -1,3 +1,38 @@
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Medium.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Heavy.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Ultra.ttf");
+    font-weight: 100;
+}
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +41,7 @@
     list-style: none;
     scroll-behavior: smooth;
     color: black;
-    font-family: 'Neue Power', sans-serif;
+    font-family: Neue Power;
 }
 ::-webkit-scrollbar{
     display: none;
@@ -14,7 +49,7 @@
 .container{
     width: 100%;
     padding: 30px 50px;
-    background: url(/minia/assets/bg.png);
+    background: url(../assets/bg.png);
 }
 .logo{
     display: flex;

@@ -1,4 +1,40 @@
-*{
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Medium.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Heavy.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Neue Power";
+    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Ultra.ttf");
+    font-weight: 100;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,12 +42,14 @@
     list-style: none;
     scroll-behavior: smooth;
     color: black;
-    font-family: 'Neue Power', sans-serif;
+    font-family: Neue Power;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     display: none;
 }
-header{
+
+header {
     width: 100%;
     padding: 10px;
     background: url('/assets/bg.png') no-repeat;
@@ -20,70 +58,89 @@ header{
     justify-content: space-between;
     transition: 0.3s;
 }
-.logo{
+
+.logo {
     width: 30px;
 }
-.navbar{
+
+.navbar {
     display: flex;
     align-items: center;
     column-gap: 2rem;
 }
-.navbar a{
+
+.navbar a {
     font-size: 1.1rem;
     font-weight: 500;
     color: #121C28;
 }
-.navbar a:hover{
+
+.navbar a:hover {
     color: #2910C6;
 }
-.icons{
+
+.icons {
     display: flex;
 }
-#menu-icon{
+
+#menu-icon {
     display: none;
 }
-.bx-menu, .bxs-cog, .bx-x{
+
+.bx-menu,
+.bxs-cog,
+.bx-x {
     font-size: 24px;
     padding: 5px;
     cursor: pointer;
     color: #2910C6;
 }
-.container{
+
+.container {
     background: url(/assets/bg.png) no-repeat;
     height: auto;
 }
-.container h1{
+
+.container h1 {
     padding: 20px 0 20px 40px;
 }
-.balance-container{
+
+.balance-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.balance-sec{
+
+.balance-sec {
     position: relative;
     top: -50px;
 }
-.balance-sec p{
+
+.balance-sec p {
     font-size: 18px;
     padding: 8px 0;
 }
-.balance{
+
+.balance {
     display: flex;
     column-gap: 0.5rem;
     align-items: center;
     padding: 0 0 8px;
 }
-.balance img{
+
+.balance img {
     width: 30px;
 }
-.balance h2{
+
+.balance h2 {
     font-size: 35px;
 }
-.home-img{
+
+.home-img {
     width: 360px;
 }
-button{
+
+button {
     padding: 10px 20px;
     text-align: center;
     display: flex;
@@ -95,10 +152,13 @@ button{
     color: white;
     border-radius: 5px;
 }
-.bxs-up-arrow, .bxs-down-arrow{
+
+.bxs-up-arrow,
+.bxs-down-arrow {
     color: white;
 }
-.coins-sec{
+
+.coins-sec {
     width: 100%;
     padding: 20px 40px;
     display: flex;
@@ -106,30 +166,36 @@ button{
     justify-content: space-between;
     column-gap: 3rem;
     overflow-x: auto;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
-.coins-sec img{
+
+.coins-sec img {
     width: 100px;
 }
-.rate-container{
+
+.rate-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 20px 40px;
     background-color: #EEF2FF;
 }
-.rate-container h2{
+
+.rate-container h2 {
     font-size: 35px;
 }
-.sell-sec{
+
+.sell-sec {
     text-align: center;
     padding: 20px 40px;
 }
-.sell-sec h2{
+
+.sell-sec h2 {
     font-size: 35px;
     padding: 20px 0 40px 0;
 }
-.filter-sec{
+
+.filter-sec {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -137,7 +203,8 @@ button{
     column-gap: 2rem;
     margin-bottom: 40px;
 }
-.drop-down{
+
+.drop-down {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -147,43 +214,52 @@ button{
     width: 300px;
     margin-bottom: 10px;
 }
-.drop-down select{
+
+.drop-down select {
     border: none;
     outline: none;
     background: none;
 }
-input{
+
+input {
     width: 100%;
     border: none;
     outline: none;
 }
-::placeholder{
+
+::placeholder {
     color: black;
 }
-.filter{
+
+.filter {
     padding: 2px 5px;
     height: 35px;
     border: 1px solid blue;
     border-radius: 5px;
 }
-.bx-filter-alt{
+
+.bx-filter-alt {
     margin-top: 5px;
 }
-.table-container{
+
+.table-container {
     overflow-x: auto;
     min-width: 100%;
 }
+
 table {
     min-width: 1180px;
     border-collapse: collapse;
     margin-bottom: 20px;
 }
 
-th, td {
+th,
+td {
     padding: 15px;
     text-align: left;
 }
-td img{
+
+td img {
     width: 15px;
     object-fit: contain;
 }
@@ -191,61 +267,72 @@ td img{
 tr:hover {
     background-color: #f5f5f5;
 }
-.sell-btn{
+
+.sell-btn {
     background-color: #C61053;
 }
-.blog-container{
+
+.blog-container {
     padding: 20px 40px;
 }
-.blog-container h2{
+
+.blog-container h2 {
     text-align: left;
     font-size: 30px;
     margin-bottom: 20px;
 }
-.blog-sec{
+
+.blog-sec {
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
     column-gap: 2rem;
 }
-.blog-box{
+
+.blog-box {
     width: 270px;
     height: 280px;
-    background-color:  #4422ef;
+    background-color: #4422ef;
     border-radius: 25px;
     padding: 20px 10px;
     margin-bottom: 20px;
 }
-.blog{
+
+.blog {
     width: 240px;
     height: 150px;
-    background-color:  #eef2ff;
+    background-color: #eef2ff;
     display: block;
     margin: auto;
     border-radius: 25px;
     margin-bottom: 10px;
 }
-.blog-box p{
+
+.blog-box p {
     color: white;
 }
 
-@media(max-width:900px){
-    .coins-sec img{
+@media(max-width:900px) {
+    .coins-sec img {
         width: 90px;
     }
-    .rate-container h2{
+
+    .rate-container h2 {
         font-size: 30px;
     }
-    .sell-sec h2{
+
+    .sell-sec h2 {
         font-size: 30px;
     }
 }
-@media(max-width:800px){
-    #menu-icon{
+
+@media(max-width:800px) {
+    #menu-icon {
         display: block;
     }
-    .navbar{
+
+    .navbar {
         display: block;
         width: 50%;
         height: 100%;
@@ -258,89 +345,113 @@ tr:hover {
         margin-top: -8px;
         z-index: 999;
     }
-    .navbar li{
+
+    .navbar li {
         padding: 20px 0;
     }
-    .home-img{
+
+    .home-img {
         width: 300px;
     }
-    .container{
+
+    .container {
         height: 80vh;
     }
-    .container h1{
+
+    .container h1 {
         font-size: 24PX;
         margin-bottom: 20px;
     }
-    .balance-sec h2{
+
+    .balance-sec h2 {
         font-size: 24px;
     }
-    .coins-sec img{
+
+    .coins-sec img {
         width: 80px;
     }
-    .rate-container h2{
+
+    .rate-container h2 {
         font-size: 28px;
     }
-    .sell-sec h2{
+
+    .sell-sec h2 {
         font-size: 28px;
     }
 }
-@media(max-width:650px){
-    .home-img{
+
+@media(max-width:650px) {
+    .home-img {
         display: none;
     }
-    .balance-sec{
+
+    .balance-sec {
         top: 0;
     }
-    .container{
+
+    .container {
         height: 60vh;
     }
-    button{
+
+    button {
         padding: 9px 18px;
     }
-    .coins-sec img{
+
+    .coins-sec img {
         width: 60px;
     }
-    .rate-container h2{
+
+    .rate-container h2 {
         font-size: 24px;
     }
 }
-@media(max-width:500px){
-    .rate-container h2{
+
+@media(max-width:500px) {
+    .rate-container h2 {
         font-size: 22px;
     }
-    .sell-sec h2{
+
+    .sell-sec h2 {
         font-size: 22px;
     }
-    .blog-container{
+
+    .blog-container {
         padding: 20px;
     }
 }
-@media(max-width:400px){
-    .blog-box{
+
+@media(max-width:400px) {
+    .blog-box {
         width: 100%;
         padding: 15px;
         height: auto;
     }
-    .blog{
+
+    .blog {
         width: 90%;
     }
-    .blog-box P{
+
+    .blog-box P {
         font-size: 13px;
     }
 }
-@media(max-width:310px){
-    .blog-box{
+
+@media(max-width:310px) {
+    .blog-box {
         height: auto;
     }
-    .blog{
+
+    .blog {
         height: 100px;
     }
 }
-@media(max-width:250px){
-    .blog-box P{
+
+@media(max-width:250px) {
+    .blog-box P {
         font-size: 10px;
     }
-    .blog{
+
+    .blog {
         width: 100%;
     }
 }

@@ -7,7 +7,7 @@
     font-family: 'Neue Power', sans-serif;
 }
 body{
-    background: url(/assets/bg.png) no-repeat;
+    background: url(../assets/bg.png) no-repeat;
 }
 ::-webkit-scrollbar{
     display: none;
