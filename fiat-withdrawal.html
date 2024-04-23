@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fiat-withdrawal.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Neue+Power:wght@400&display=swap">
+    <title>Fiat Withdrawal</title>
+</head>
+<body>
+    <header>
+        <div><img src="assets/dashboard.png" alt="logo" class="logo"></div>
+        <ul class="navbar" id="navBar">
+            <li><a href="#">Sell USDT</a></li>
+            <li><a href="#">Deposit USDT</a></li>
+            <li><a href="#">Fiat Withdrawal</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><i class="bx bx-x" id="menu-icon" onclick="navFunction()"></i></li>
+        </ul>
+        <div class="icons">
+            <i class='bx bxs-cog'></i>
+            <i class="bx bx-menu" id="menu-icon" onclick="navFunction()"></i>
+        </div>
+    </header>
+    <div class="container">
+        <div class="withdrawal-sec">
+            <h2>Withdrawal Fiat</h2>
+            <p>Withdrawal your fiat to your local currency</p>
+            <div class="input-box">
+                <input type="text" placeholder="Enter amount">
+                <span>USDT</span>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Select currency">
+                <div style="display: flex;">
+                    <i class='bx bxs-dollar-circle'></i>
+                    <select name="" id="">
+                        <option value="">INR</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Select bank">
+                <div style="display: flex;">
+                    <select name="" id="">
+                        <option value=""></option>
+                    </select>
+                </div>
+            </div>
+            <h3>Two Factor Authentication</h3>
+            <div class="input-box">
+                <input type="text" placeholder="Enter your passkey">
+            </div>
+            <button class="withdrawal-btn">Withdrawal</button>
+        </div>
+        <div class="faq-container">
+            <div class="">
+                <div style="display: flex; justify-content: center;">
+                    <div class="balance-sec">
+                        <p>Available Balance</p>
+                        <div class="balance">
+                            <img src="assets/t.png" alt="T">
+                            <h2>1236.56$ <span style="color: #2910C6;">USDT</span></h2>
+                        </div>
+                        <p style="margin-left: 50px;">103036.67 INR</p>
+                    </div>
+                </div>
+                <div class="faq-sec">
+                    <h2>How to <span style="color: #2910C6;">withdrawal</span> Fiat</h2>
+                    <p><i class='bx bxs-right-arrow'></i>Enter desired amount of FIAT</p>
+                    <p><i class='bx bxs-right-arrow'></i>Select the currency to be exchange</p>
+                    <p><i class='bx bxs-right-arrow'></i>Select your bank</p>
+                    <p><i class='bx bxs-right-arrow'></i>Add Google Authenticator passkey</p>
+                    <p><i class='bx bxs-right-arrow'></i>Click <span style="color: #2910C6;">withdrawal</span> to convert fiat</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

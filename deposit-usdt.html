@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/deposit.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Neue+Power:wght@400&display=swap">
+    <title>Deposit USDT</title>
+</head>
+<body>
+    <header>
+        <div><img src="assets/dashboard.png" alt="logo" class="logo"></div>
+        <ul class="navbar" id="navBar">
+            <li><a href="#">Sell USDT</a></li>
+            <li><a href="#">Deposit USDT</a></li>
+            <li><a href="#">Fiat Withdrawal</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><i class="bx bx-x" id="menu-icon" onclick="navFunction()"></i></li>
+        </ul>
+        <div class="icons">
+            <i class='bx bxs-cog'></i>
+            <i class="bx bx-menu" id="menu-icon" onclick="navFunction()"></i>
+        </div>
+    </header>
+    <div class="container">
+        <div class="deposit-sec">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                <h5 style="color: #2910C6;">BEP20</h5>
+                <h5>ERC20</h5>
+                <h5>TRC20</h5>
+            </div>
+            <img src="assets/qr code.png" alt="QR" width="100px">
+            <p >Scan QR code to deposit USDT</p>
+            <div class="input-box">
+                <input type="text" placeholder="Wallet Address">
+                <img src="assets/copy.png" alt="" class="copy">
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Enter amount">
+                <div style="display: flex;">
+                    <i class='bx bxs-dollar-circle'></i>
+                    <select name="" id="">
+                        <option value="">USD</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-box">
+               <span>Payment method</span>
+               <select name="" id="">
+                <option value=""></option>
+               </select>
+            </div>
+            
+            <button class="deposit-btn">Deposit</button>
+            <p style="padding: 10px;">Your INR wallet balance is 0 INR <br> Your USDT wallet balance is 0</p>
+        </div>
+        <div class="faq-container">
+            <div class="">
+                <div style="display: flex; justify-content: center;">
+                    <div class="balance-sec">
+                        <p>Available Balance</p>
+                        <div class="balance">
+                            <img src="assets/t.png" alt="T">
+                            <h2>00.00$ <span style="color: #2910C6;">USDT</span></h2>
+                        </div>
+                        <p style="margin-left: 50px;">00.00 INR</p>
+                    </div>
+                </div>
+                <div class="faq-sec">
+                    <h2>How to <span style="color: #2910C6;">deposit</span> USDT in wallet</h2>
+                    <p><i class='bx bxs-right-arrow'></i>Scan QR Code or add wallet address</p>
+                    <p><i class='bx bxs-right-arrow'></i>Enter specific amount in your currency</p>
+                    <p><i class='bx bxs-right-arrow'></i>Select a payment method</p>
+                    <p><i class='bx bxs-right-arrow'></i>Add payment details if not added</p>
+                    <p><i class='bx bxs-right-arrow'></i>Click <span style="color: #2910C6;">deposit</span> to get USDT in wallet</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

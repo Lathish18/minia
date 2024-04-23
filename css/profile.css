@@ -5,8 +5,7 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-    font-family: 'Neue Power';
-    
+    font-family: 'Neue Power', sans-serif;
 }
 body{
     background: url(/assets/bg.png) no-repeat;

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sellusdt.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Neue+Power:wght@400&display=swap">
+    <title>Sell USDT - SignUp</title>
+</head>
+<body>
+    <header>
+        <div><img src="assets/dashboard.png" alt="logo" class="logo"></div>
+        <ul class="navbar" id="navBar">
+            <li><a href="#">Sell USDT</a></li>
+            <li><a href="#">Deposit USDT</a></li>
+            <li><a href="#">Fiat Withdrawal</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#" class="signup">Sign up</a></li>
+            <li><i class="bx bx-x" id="menu-icon" onclick="navFunction()"></i></li>
+        </ul>
+        <i class="bx bx-menu" id="menu-icon" onclick="navFunction()"></i>
+        <!-- <div class="icons">
+            <i class='bx bxs-cog'></i>
+            <i class="bx bx-menu" id="menu-icon" onclick="navFunction()"></i>
+        </div> -->
+    </header>
+    <div class="container">
+        <div class="sell-sec">
+            <h2>Sell USDT</h2>
+            <p>Sell USDT in few clicks <br> Today's <span style="color: #2910C6;">USDT Rate</span> 1.00 USD <span style="color: #2910C6;">(0.02%)</span> today</p>
+            <div class="input-box">
+                <input type="text" placeholder="Enter quantity"> 
+                <span>USDT</span>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Sell for"> 
+                <span>INR</span>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+                <p>USDT 0.008</p>
+                <p>= 0.76 INR</p>
+            </div>
+            <button class="btn">Sell USDT</button>
+            <p>Your INR wallet balance is 0 INR <br> Your USDT wallet balance is 0</p>
+        </div>
+        <div class="faq-container">
+            <div>
+                <div style="display: flex; justify-content: center;">
+                    <div class="balance-sec">
+                        <p>Available Balance</p>
+                        <div class="balance">
+                            <img src="assets/t.png" alt="T">
+                            <h2>00.00$ <span style="color: #2910C6;">USDT</span></h2>
+                        </div>
+                        <p style="margin-left: 50px;">00.00 INR</p>
+                    </div>
+                </div>
+                <div class="faq-sec">
+                    <h2>FAQs</h2>
+                    <p><i class='bx bxs-right-arrow'></i>How do I sell USDT on your platform?</p>
+                    <p><i class='bx bxs-right-arrow'></i>Which steps involved in selling USDT?</p>
+                    <p><i class='bx bxs-right-arrow'></i>Is it sae to sell USDT here?</p>
+                    <p><i class='bx bxs-right-arrow'></i>Is customer support available 24/7?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

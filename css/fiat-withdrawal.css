@@ -6,9 +6,6 @@
     box-sizing: border-box;
     font-family: 'Neue Power', sans-serif;
 }
-body{
-    background: url(/assets/bg.png) no-repeat;
-}
 ::-webkit-scrollbar{
     display: none;
 }
@@ -19,6 +16,7 @@ header{
     align-items: center;
     justify-content: space-between;
     transition: 0.3s;
+    background: url(/assets/bg.png) no-repeat;
 }
 .logo{
     width: 30px;
@@ -48,64 +46,56 @@ header{
     cursor: pointer;
     color: #2910C6;
 }
-.signup{
-    background-color: #2910C6;
-    color: white!important;
-    border-radius: 5px;
-    padding: 5px 10px;
-}
 
 .container{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 85vh;
+    height: 100vh;
+    background: url(/assets/bg.png) no-repeat;
 }
-.sell-sec{
+.withdrawal-sec{
     background-color: #EEF2FF;
     width: 340px;
-    height: 380px;
+    height: auto;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
-.sell-sec h2{
-    margin-bottom: 10px;
-    font-size: 30px;
-}
-.sell-sec p{
-    margin-bottom: 20px;
+.withdrawal-sec p, .withdrawal-sec h3, .withdrawal-sec h2{
+    margin-bottom: 15px;
 }
 .input-box{
     width: 300px;
-    position: relative;
-    margin-bottom: 10px;
-}
-
-input{
-    width: 100%;
+    background-color: white;
+    margin-bottom: 15px;
+    display: flex;
     padding: 10px;
+    justify-content: space-between;
+}
+input{
+    outline: none;
+    border: none;
+}
+select{
     border: none;
     outline: none;
-    border-radius: 5px;
 }
-.input-box span{
-    position: absolute;
-    right: 10px;
-    top: 10px;
+.bxs-dollar-circle{
+    color: #2910C6;
 }
 button{
     padding: 10px 20px;
+    width: 100%;
     text-align: center;
     background-color: #2910C6;
     border: none;
     outline: none;
     color: white;
-    border-radius: 3px;
-    width: 100%;
-    margin-bottom: 15px;
-    cursor: pointer;
+    border-radius: 5px;
 }
+
 .faq-container{
     height: 380px;
     width: auto;
@@ -186,37 +176,42 @@ button{
 } 
 
 @media(max-width:780px){
-    .container, .faq-container, .sell-sec{
+    .container{
         height: auto;
-    }
-    header{
-        margin-bottom: 30px;
-    }
-    .container, .sell-sec{
         display: block;
         margin: auto;
     }
+    header{
+        padding-bottom: 30px;
+    }
     .faq-sec h2{ 
         text-align: center;
+        font-size: 22px;
+        margin-bottom: 15px;
     }
-    .sell-sec{
+    .faq-sec p{
+        font-size: 18px;
+    }
+    .withdrawal-sec{
         margin-bottom: 30px;
-        width: 100%;
+        width: 80%;
         text-align: center;
+        display: block;
+        margin: auto;
     }
     .input-box, input{
         width: 100%;
     }
 }
 @media(max-width:400px){
-    .sell-sec h2{
+    .withdrawal-sec h2{
         font-size: 20px;
     }
-    .sell-sec p{
+    .withdrawal-sec p{
         font-size: 12px;
     }
     .balance h2{
-        font-size: 30px;
+        font-size: 18px;
     }
     .balance-sec p{
         font-size: 20px;
@@ -229,10 +224,10 @@ button{
     }
 }
 @media(max-width:270px){
-    .sell-sec h2{
+    .withdrawal-sec h2{
         font-size: 18px;
     }
-    .sell-sec p{
+    .withdrawal-sec p{
         font-size: 12px;
     }
     .balance h2{

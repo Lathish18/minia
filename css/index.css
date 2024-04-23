@@ -6,8 +6,7 @@
     list-style: none;
     scroll-behavior: smooth;
     color: black;
-    font-family: 'Neue Power';
-    
+    font-family: 'Neue Power', sans-serif;
 }
 ::-webkit-scrollbar{
     display: none;
@@ -51,7 +50,7 @@ header{
 }
 .container{
     background: url(/assets/bg.png) no-repeat;
-    height: 100vh;
+    height: auto;
 }
 .container h1{
     padding: 20px 0 20px 40px;

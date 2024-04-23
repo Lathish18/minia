@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Neue Power';
+    font-family: 'Neue Power', sans-serif;
 }
 .container{
     width: 100%;

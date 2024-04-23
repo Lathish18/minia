@@ -6,8 +6,7 @@
     list-style: none;
     scroll-behavior: smooth;
     color: black;
-    font-family: 'Neue Power';
-    
+    font-family: 'Neue Power', sans-serif;
 }
 ::-webkit-scrollbar{
     display: none;
