@@ -1,36 +1,36 @@
 @font-face {
     font-family: "Neue Power";
-    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Regular.ttf");
+    src: url("../fonts/NeuePower-Regular.ttf");
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Neue Power";
-    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Bold.ttf");
+    src: url("../fonts/NeuePower-Bold.ttf");
     font-weight: bold;
 }
 
 @font-face {
     font-family: "Neue Power";
-    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Medium.ttf");
+    src: url("../fonts/NeuePower-Medium.ttf");
     font-weight: 400;
 }
 
 @font-face {
     font-family: "Neue Power";
-    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Light.ttf");
+    src: url("../fonts/NeuePower-Light.ttf");
     font-weight: 300;
 }
 
 @font-face {
     font-family: "Neue Power";
-    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Heavy.ttf");
+    src: url("../fonts/NeuePower-Heavy.ttf");
     font-weight: 700;
 }
 
 @font-face {
     font-family: "Neue Power";
-    src: url("../fonts/NeuePowerTrial/NeuePowerTrial-Ultra.ttf");
+    src: url("../fonts/NeuePower-Ultra.ttf");
     font-weight: 100;
 }
 
