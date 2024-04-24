@@ -6,32 +6,32 @@
 
 @font-face {
     font-family: "Neue Power";
+    src: url("../fonts/NeuePower-Medium.ttf");
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: "Neue Power";
     src: url("../fonts/NeuePower-Bold.ttf");
     font-weight: bold;
 }
-
-@font-face {
-    font-family: "Neue Power";
-    src: url("../fonts/NeuePower-Medium.ttf");
-    font-weight: 400;
+html {
+    font-size: 16px;
 }
-
-@font-face {
-    font-family: "Neue Power";
-    src: url("../fonts/NeuePower-Light.ttf");
-    font-weight: 300;
+@media screen and (max-width: 1700px) {
+    html {
+      font-size: 14px;
+    }
 }
-
-@font-face {
-    font-family: "Neue Power";
-    src: url("../fonts/NeuePower-Heavy.ttf");
-    font-weight: 700;
+@media screen and (max-width: 1400px) {
+    html {
+      font-size: 12px;
+    }
 }
-
-@font-face {
-    font-family: "Neue Power";
-    src: url("../fonts/NeuePower-Ultra.ttf");
-    font-weight: 100;
+@media screen and (max-width: 1300px) {
+    html {
+      font-size: 9px;
+    }
 }
 
 *{
@@ -43,31 +43,35 @@
     font-family: Neue Power;
 }
 body{
-    background: url(../assets/bg.png) no-repeat;
+    background: url(../assets/bg.png);
+    background-size: cover;
 }
 ::-webkit-scrollbar{
     display: none;
 }
 header{
     width: 100%;
-    padding: 10px;
+    padding: 4.0625rem 2.8125rem 10.5625rem 4.25rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     transition: 0.3s;
 }
 .logo{
-    width: 30px;
+    width: 3.9375rem;
 }
 .navbar{
     display: flex;
     align-items: center;
-    column-gap: 2rem;
+    column-gap: 5rem;
 }
 .navbar a{
-    font-size: 1.1rem;
-    font-weight: 500;
+    font: normal normal normal 2.8125rem/3.375rem Neue Power;
+    letter-spacing: 0.084375rem;
     color: #121C28;
+}
+.navbar a.active {
+    color: #2910C6;
 }
 .navbar a:hover{
     color: #2910C6;
@@ -79,112 +83,145 @@ header{
     display: none;
 }
 .bx-menu, .bxs-cog, .bx-x{
-    font-size: 24px;
-    padding: 5px;
+    font-size: 3.5rem;
     cursor: pointer;
     color: #2910C6;
 }
 .signup{
     background-color: #2910C6;
     color: white!important;
-    border-radius: 5px;
-    padding: 5px 10px;
+    border-radius: 0.3125rem;
+    padding: 0.3125rem 0.625rem;
 }
 
 .container{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    height: 85vh;
+    justify-content: space-between;
+    padding: 0 2.8125rem 0px 8.6875rem;
+    gap: 128px;
 }
 .sell-sec{
-    background-color: #EEF2FF;
-    width: 340px;
-    height: 380px;
-    padding: 20px;
-    border-radius: 8px;
-    filter: drop-shadow(0px 0px 3px rgba(0,0,0,0.23 ));
+    width: 60%;
+    padding: 5.5625rem 4.78515625rem 0 4.78515625rem;
+    background: #EEF2FF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 0.9375rem #0000003B;
+    border-radius: 1.5rem;
+    margin-bottom: 8.6875rem;
 }
 .sell-sec h2{
-    margin-bottom: 10px;
-    font-size: 30px;
+    margin-bottom: 0.9375rem;
+    font: normal normal normal 3rem/3.625rem Neue Power;
+    letter-spacing: 0.15rem;
     color: #2910C6;
 }
 .sell-sec p{
-    margin-bottom: 20px;
+    font-weight: medium;
+    font-size: 1.6875rem;
+    line-height: 2rem;
+    letter-spacing: 0.084375rem;
     color: #121C28;
+    margin-bottom: 2.25rem;
 }
 .input-box{
-    width: 300px;
+    width: 100%;
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 2.1875rem;
+    border: 1px solid #2910C6;
+    border-radius: 0.5rem;
 }
 ::placeholder{
     color: #A9A9A9;
+    font-weight: medium;
+    font-size: 2rem;
+    line-height: 2.375rem;
+    letter-spacing: 0.1rem;
 }
 input{
     width: 100%;
-    padding: 10px;
+    padding: 1.4375rem 1.875rem;
     border: none;
     outline: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    line-height: 2.375rem;
+    letter-spacing: 0.1rem;
 }
 .input-box span{
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 1.6875rem;
+    top: 1.625rem;
+    font-size: 1.6875rem;
+    line-height: 2.375rem;
+    letter-spacing: 0.1rem;
 }
 button{
-    padding: 10px 20px;
+    padding: 1.375rem 0;
     text-align: center;
-    background-color: #2910C6;
     border: none;
     outline: none;
-    color: white;
-    border-radius: 3px;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
     cursor: pointer;
+    font: normal normal normal 3.125rem/3.75rem Neue Power;
+    letter-spacing: 0.15625rem;
+    color: #EDEEF9;
+    background: #2910C6 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 0.375rem #00000052;
+    border-radius: 0.5rem;
 }
 .faq-container{
-    height: 380px;
-    width: auto;
-    padding: 20px;
+    width: 60%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 .balance-sec{
-    margin-bottom: 30px;
+    margin-bottom: 4.3125rem;
 }
 .balance-sec img{
-    width: 40px;
+    width: 4.0625rem;
+    height: 4.0625rem;
 }
 .balance{
     display: flex;
     column-gap: 0.5rem;
+    align-items: center;
 }
 .balance h2{
-    font-size: 35px;
+    font: normal normal 900 4.6875rem/5.625rem Neue Power;
+    letter-spacing: 3.75px;
 }
-.balance-sec p{
-    font-size: 24px;
-    opacity: 0.7;
-    margin-bottom: 5px;
+.balance-sec > p{
+    font: normal normal normal 2.25rem/2.6875rem Neue Power;
+    letter-spacing: 0.1125rem;
+    color: #121C28;
+}
+.balance-sec .amount {
+    margin-left: 4.5625rem;
+    letter-spacing: 0.159375rem;
+    color: #454C62;
+    font-weight: medium;
+    font-size: 3.1875rem;
+    line-height: 3.8125rem;
 }
 .faq-sec h2{
-    font-size: 35px;
-    margin-bottom: 10px;
-    color:   #121c28;
+    font: normal normal bold 5.625rem/6.75rem Neue Power;
+    letter-spacing: 0.28125rem;
+    color: #121C28;
+    margin-bottom: 2.75rem;
 }
 .bxs-right-arrow{
     color: #2910C6;
-    margin-right: 5px;
+    margin-right: 0.9375rem;
 }
 .faq-sec p{
-    margin-bottom: 10px;
-    font-size: 22px;
+    font: normal normal bold 2.3125rem/2.75rem Neue Power;
+    letter-spacing: 0.115625rem;
+    padding-bottom: 0.875rem;
+    border-bottom: 1px solid #2910C6;
+    margin-bottom: 2.25rem;
 }
-
+/* 
 @media(max-width:980px){
     .faq-sec p{
         font-size: 20px;
@@ -289,4 +326,4 @@ button{
         font-size: 12px;
     }
     
-}
+} */
