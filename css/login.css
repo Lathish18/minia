@@ -1,13 +1,13 @@
 @font-face {
     font-family: "Neue Power";
-    src: url("../fonts/NeuePower-Medium.ttf");
-    font-weight: 500;
+    src: url("../fonts/NeuePower-Regular.ttf");
+    font-weight: normal;
 }
 
 @font-face {
     font-family: "Neue Power";
-    src: url("../fonts/NeuePower-Regular.ttf");
-    font-weight: normal;
+    src: url("../fonts/NeuePower-Medium.ttf");
+    font-weight: medium;
 }
 
 @font-face {
@@ -15,29 +15,13 @@
     src: url("../fonts/NeuePower-Bold.ttf");
     font-weight: bold;
 }
-
-@font-face {
-    font-family: "Neue Power";
-    src: url("../fonts/NeuePower-Medium.ttf");
-    font-weight: 400;
+html {
+    font-size: 16px;
 }
-
-@font-face {
-    font-family: "Neue Power";
-    src: url("../fonts/NeuePower-Light.ttf");
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: "Neue Power";
-    src: url("../fonts/NeuePower-Heavy.ttf");
-    font-weight: 900;
-}
-
-@font-face {
-    font-family: "Neue Power";
-    src: url("../fonts/NeuePower-Ultra.ttf");
-    font-weight: 100;
+@media screen and (max-width: 1600px) {
+    html {
+      font-size: 9px;
+    }
 }
 *{
     margin: 0;
@@ -54,67 +38,100 @@
 .container{
     width: 100%;
     height: 100%;
-    padding: 5% 8%;
+    padding: 8.6875rem 10.3125rem 8.3125rem 10.875rem;
     background: url(../assets/bg.png);
+}
+.password-container {
+    display: flex;
+    margin-bottom: 29px;
+    align-items: center;
+}
+.login {
+    width: 40%;
 }
 .logo{
     display: flex;
-    column-gap: 1.5rem;
-    margin-bottom: 50px;
+    column-gap: 1.8125rem;
+    margin-bottom: 7.0625rem;
     align-items: center;
 }
 .logo img{
-    width: 61px;
+    width: 3.8125rem;
 }
-.logo h2{
+.logo .title{
     color: #121C28;
-    font-size: 45px;
+    font-size: 2.8125rem;
     font-weight: normal;
     font-family: "Neue Power";
     font-style: normal;
+    line-height: 3.375rem;
+    letter-spacing: 0px;
+    opacity: 1;
 }
 .login-sec{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 80px;
 }
 .login-sec h2{
-    font-size: 35px; 
-    margin-bottom: 10px;
+    margin-bottom: 0.5625rem;
     color: #121C28;
+    font: normal normal bold 4.25rem/5.125rem Neue Power;
+    letter-spacing: 0px;
 }
 .login-sec p{
-    font-size: 22px;
-    margin-bottom: 10px;
+    margin-bottom: 2.25rem;
     color: #818384;
+    font: normal normal normal 1.875rem/2.25rem Neue Power;
+    letter-spacing: 0.01875rem;
+}
+.login-sec p a {
+    font: normal normal bold 1.875rem/2.25rem Neue Power;
+    letter-spacing: 0.01875rem;
+    color: #4422EF;
 }
 .login-sec h4{
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #818384;
+    font-weight: medium;
+    font-size: 2.1875rem;
+    line-height: 2.625rem;
+    letter-spacing: 0px;
+    margin-bottom: 0.625rem;
+    color: #121C28;
+}
+.login-img {
+    width: 60%;
+    text-align: right;
 }
 .login-img img{
-    width: 400px;
+    width: 52.25rem;
 }
 input{
     border: none;
     outline: none;
-    border-radius: 10px;
+    border-radius: 0.75rem;
     background-color: #f5f5f5;
-    padding: 10px 20px;
-    margin-bottom: 10px;
-    width: 300px;
+    padding: 1.3125rem 1.625rem;
+    margin-bottom: 1.8125rem;
+    font: normal normal normal 1.5625rem/1.875rem Neue Power;
+    width: 90%;
 }
 ::placeholder{
     color: #A7A7A7;
+    font: normal normal normal 1.5625rem/1.875rem Neue Power;
+    letter-spacing: 0px;
+}
+.password-container input {
+    margin-bottom: 0;
 }
 .eye{
-    width: 17px;
+    width: 2.0625rem;
+    height: 1.25rem;
     position: relative;
-    left: -30px;
+    left: -4rem;
 }
 button{
-    padding: 10px 20px;
+    padding: 1.3125rem 0;
     text-align: center;
     display: flex;
     column-gap: 0.5rem;
@@ -123,8 +140,23 @@ button{
     border: none;
     outline: none;
     color: white;
-    border-radius: 5px;
-    margin: 10px 0;
+    border-radius: 0.75rem;
+    margin: 3.6875rem 0 1.375rem 0;
+    font: normal normal normal 1.75rem/2.125rem Neue Power;
+    letter-spacing: 0px;
+    width: 90%;
+    justify-content: center;
+}
+.forgot-pass {
+    margin-bottom: 0 !important;
+}
+@media(max-width:1600px){
+    .container{
+        padding: 7.81875rem 9.28125rem 7.48125rem 9.7875rem;
+    }
+    .logo {
+        margin-bottom: 6.35625rem;
+    }
 }
 
 @media(max-width:950px){
@@ -144,41 +176,14 @@ button{
         font-size: 18px;
     }
 }
-@media(max-width:730px){
-    .login-img img{
+@media(max-width:767px){
+    .container{
+        padding: 4.34375rem 5.15625rem 4.15625rem 5.4375rem;
+    }
+    .login-img {
         display: none;
     }
-}
-@media(max-width:420px){
-    .container{
-        padding: 10px;
-    }
-    .logo img{
-        width: 20px;
-        object-fit: contain;
-    }
-    .logo h2{
-        font-size: 18px;
-    }
-    .login-sec h2{
-        font-size: 20px; 
-    }
-    .login-sec p{
-        font-size: 14px;
-    }
-    .login-sec h4{
-        font-size: 15px;
-    }
-    input{
+    .login {
         width: 100%;
-    }
-    button{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-    .eye{
-        top: -36px;
-        left: 93%;
     }
 }
