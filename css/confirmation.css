@@ -6,38 +6,51 @@
 
 @font-face {
     font-family: "Neue Power";
+    src: url("../fonts/NeuePower-Medium.ttf");
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: "Neue Power";
     src: url("../fonts/NeuePower-Bold.ttf");
     font-weight: bold;
 }
-
-@font-face {
-    font-family: "Neue Power";
-    src: url("../fonts/NeuePower-Medium.ttf");
-    font-weight: 400;
+html {
+    font-size: 15px;
+}
+@media screen and (max-width: 1840px) {
+    html {
+      font-size: 14px;
+    }
+}
+@media screen and (max-width: 1710px) {
+    html {
+      font-size: 12px;
+    }
+}
+@media screen and (max-width: 1600px) {
+    html {
+      font-size: 9px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    html {
+      font-size: 7px;
+    }
+}
+@media screen and (max-width: 850px) {
+    html {
+      font-size: 6px;
+    }
 }
 
-@font-face {
-    font-family: "Neue Power";
-    src: url("../fonts/NeuePower-Light.ttf");
-    font-weight: 300;
-}
 
-@font-face {
-    font-family: "Neue Power";
-    src: url("../fonts/NeuePower-Heavy.ttf");
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: "Neue Power";
-    src: url("../fonts/NeuePower-Ultra.ttf");
-    font-weight: 100;
-}
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
     box-sizing: border-box;
-    font-family: Neue Power;
 }
 .container{
     width: 100%;
@@ -47,29 +60,33 @@
     padding: 20px;
 }
 .box{
-    width: 350px;
-    height: 270px;
-    border-radius: 10px;
+    width: 54.125rem;
+    height: auto;
+    border-radius: 24px;
     text-align: center;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-.box h2, .box p{
-    padding: 8px;
+    padding: 2.5rem 3.125rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 25px #00000052;
 }
 .box h2{
     color: #2910C6;
+    font: normal normal normal 3.3125rem/4rem Neue Power;
+    letter-spacing: 2.65px;
+    margin-bottom: 10px;
 }
 .box p{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #121c28;
+    font-family: Neue Power;
+    font-size: 1.6875rem;
+    letter-spacing: 1.35px;
 }
 .icon{
     text-align: right;
     padding: 5px;
 }
 .bx{
-    font-size: 24px;
+    font-size: 3.75rem;
     color: #5447a4;
 }
 button{
@@ -78,39 +95,32 @@ button{
     border: none;
     outline: none;
     color: white;
-    border-radius: 2px;
+    border-radius: 8px;
     display: block;
     margin: auto;
-    width: 200px;
-    margin-bottom: 10px;
+    width: 38.875rem;
+    height: 6.5625rem;
+    margin-bottom: 20px;
     cursor: pointer;
 }
 .btn-1{
     background-color: #2910C6;
+    font: normal normal normal 3.125rem/3.75rem Neue Power;
+    letter-spacing: 2.5px;
+    color: #EDEEF9;
 }
 .btn-2{
     background-color: #C61022;
+    font: normal normal normal 3.125rem/3.75rem Neue Power;
+    letter-spacing: 2.5px;
+    color: #EDEEF9;
 }
 
-@media(max-width:400px){
-    .box{
+@media(max-width:380px){
+    .box, button{
         width: 100%;
-        height: auto;
     }
-    button{
-        width: 80%;
-    }
-    h2{
-        font-size: 15px;
-        padding: 4px;
-    }
-    p{
-        font-size: 12px;
-    }
-    .bx{
-        font-size: 20px;
-    }
-    .btn-1, .btn-2{
-        font-size: 12px;
+    .box{
+        padding: 10px;
     }
 }

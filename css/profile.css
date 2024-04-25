@@ -6,71 +6,82 @@
 
 @font-face {
     font-family: "Neue Power";
+    src: url("../fonts/NeuePower-Medium.ttf");
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: "Neue Power";
     src: url("../fonts/NeuePower-Bold.ttf");
     font-weight: bold;
 }
-
-@font-face {
-    font-family: "Neue Power";
-    src: url("../fonts/NeuePower-Medium.ttf");
-    font-weight: 400;
+html {
+    font-size: 15px;
+}
+@media screen and (max-width: 1840px) {
+    html {
+      font-size: 14px;
+    }
+}
+@media screen and (max-width: 1710px) {
+    html {
+      font-size: 12px;
+    }
+}
+@media screen and (max-width: 1600px) {
+    html {
+      font-size: 9px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    html {
+      font-size: 7px;
+    }
+}
+@media screen and (max-width: 850px) {
+    html {
+      font-size: 6px;
+    }
 }
 
-@font-face {
-    font-family: "Neue Power";
-    src: url("../fonts/NeuePower-Light.ttf");
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: "Neue Power";
-    src: url("../fonts/NeuePower-Heavy.ttf");
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: "Neue Power";
-    src: url("../fonts/NeuePower-Ultra.ttf");
-    font-weight: 100;
-}
 *{
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+    margin: 0;
     list-style: none;
-    scroll-behavior: smooth;
+    text-decoration: none;
+    box-sizing: border-box;
     font-family: Neue Power;
 }
 body{
-    background: url(../assets/bg.png) no-repeat;
-    object-fit: cover;
+    background: url(../assets/bg.png);
+    background-size: cover;
 }
 ::-webkit-scrollbar{
     display: none;
 }
-
 header{
     width: 100%;
-    padding: 10px;
+    padding: 4.0625rem 2.8125rem 8.5625rem 4.25rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     transition: 0.3s;
-    margin-bottom: 40px;
 }
 .logo{
-    width: 30px;
+    width: 3.9375rem;
 }
 .navbar{
     display: flex;
     align-items: center;
-    column-gap: 2rem;
+    column-gap: 5rem;
 }
 .navbar a{
-    font-size: 1.1rem;
-    font-weight: 500;
+    font: normal normal normal 2.8125rem/3.375rem Neue Power;
+    letter-spacing: 0.084375rem;
     color: #121C28;
+}
+.navbar a.active {
+    color: #2910C6;
 }
 .navbar a:hover{
     color: #2910C6;
@@ -82,16 +93,15 @@ header{
     display: none;
 }
 .bx-menu, .bxs-cog, .bx-x{
-    font-size: 24px;
-    padding: 5px;
+    font-size: 3.5rem;
     cursor: pointer;
     color: #2910C6;
 }
 .box{
-    width: 500px;
+    width: 83.125rem;
     height: auto;
     background-color: #eef2ff;
-    padding: 20px 10px;
+    padding: 6.25rem 8.125rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: block;
@@ -102,54 +112,61 @@ header{
     display: flex;
     align-items: end;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 3.125rem;
+    margin-left: 30px;
+    
 }
 .circle{
-    height: 130px;
-    width: 130px;
+    height: 15rem;
+    width: 15rem;
     border-radius: 50%;
     border: 1px solid #2910C6;
     background-color: white;
 }
 .bx-pencil{
-    background-color: #2910C6;
+    background: #2910C6 0% 0% no-repeat padding-box;
+    border: 4px solid #FFFFFF;
     color: white;
     padding: 3px;
     border-radius: 50%;
     position: relative;
-    left: -40px;
-    top: 0;
+    right: 4.375rem;
+    font-size: 1.875rem;
 }
 .input-box{
-    border: 1px solid #2910c6;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    border-radius: 8px;
-    display: flex;
-    margin-bottom: 10px;
-    background-color: white;
+    width: 66.4375rem;
+    height: 5.3125rem;
+    margin-bottom: 1.3125rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #2910C6;
+    border-radius: 8px;
+    padding: 5px;
 }
 .parent-box{
-    background: none!important;
-    border: none!important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.125rem;
 }
+
 .child-box{
-    border: 1px solid #2910c6;
-    width: 220px;
+    width: 30.6875rem;
+    height: 5.3125rem;
     border-radius: 8px;
-    background-color: white;
     padding: 5px;
     display: flex;
     justify-content: space-between;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #2910C6;
+    border-radius: 8px;
 }
 input{
-    padding: 5px;
-    width: 240px;
+    padding: 0.625rem 1.25rem 0;
+    height: 100%;
+    width: 100%;
     border: none;
     outline: none;
     background: none;
@@ -161,17 +178,22 @@ select{
 }
 
 button{
-    padding: 10px 20px;
+    width: 16.5625rem;
+    height: 4.75rem;
+    background: #C61022 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 6px #00000052;
+    border-radius: 8px;
     text-align: center;
     border: none;
     outline: none;
     color: white;
-    border-radius: 8px;
-    width: 160px;
-    margin-bottom: 10px;
+    margin-top: 1.5625rem;
 }
 ::placeholder{
-    color: #a9a9a9;
+    letter-spacing: 1.6px;
+    font-size: 2rem;
+    color: #A9A9A9;
+    font-family: Neue power;
 }
 .btn{
     display: flex;
@@ -185,7 +207,7 @@ button{
     background-color: #2910c6;
 }
 
-@media(max-width:800px){
+@media(max-width:750px){
     #menu-icon{
         display: block;
     }
@@ -207,15 +229,18 @@ button{
     }
 }
 
-@media(max-width:580px){
+@media(max-width:520px){
     .box{
         width: 90%;
+        height: auto;
+        padding: 20px;
     }
     .input-box{
         width: 100%;
     }
-    .parent-box{
+    .parent-box{   
         display: block;
+        margin-bottom: 0;
     }
     .child-box{
         width: 100%;
@@ -223,14 +248,10 @@ button{
     }
 }
 @media(max-width:400px){
-    .circle{
-        width: 100px;
-        height: 100px;
-    }
     .btn{
         display: block;
     }
     button{
         width: 100%;
     }
-}
+} 
