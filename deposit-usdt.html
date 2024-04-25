@@ -9,6 +9,7 @@
     <title>Deposit USDT</title>
 </head>
 <body>
+    <div class="top-container">
     <header>
         <div><img src="assets/dashboard.png" alt="logo" class="logo"></div>
         <ul class="navbar" id="navBar">
@@ -23,6 +24,15 @@
             <i class="bx bx-menu" id="menu-icon" onclick="navFunction()"></i>
         </div>
     </header>
+    <div class="balance-sec">
+        <p>Available Balance</p>
+        <div class="balance">
+            <img src="assets/t.png" alt="T">
+            <h2>00.00$ <span style="color: #2910C6;">USDT</span></h2>
+            <p class="amount">00.00 INR</p>
+        </div>
+        
+    </div>
     <div class="container">
         <div class="sell-sec" style="text-align: center;">
             <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
@@ -55,30 +65,18 @@
             <button class="sell-btn">Deposit</button>
             <p style="padding: 10px;">Your INR wallet balance is 0 INR <br> Your USDT wallet balance is 0</p>
         </div>
-        <div class="faq-container">
-            <div class="">
-                <!-- <div style="display: flex; justify-content: center;"> -->
-                    <div class="balance-sec">
-                        <p>Available Balance</p>
-                        <div class="balance">
-                            <img src="assets/t.png" alt="T">
-                            <h2>00.00$ <span style="color: #2910C6;">USDT</span></h2>
-                        </div>
-                        <p style="margin-left: 50px;">00.00 INR</p>
-                    </div>
-                <!-- </div> -->
-                <div class="faq-sec">
-                    <h2>How to <span style="color: #2910C6;">deposit</span><br> USDT in wallet</h2>
-                    <p><i class='bx bxs-right-arrow'></i>Scan QR Code or add wallet address</p>
-                    <p><i class='bx bxs-right-arrow'></i>Enter specific amount in your currency</p>
-                    <p><i class='bx bxs-right-arrow'></i>Select a payment method</p>
-                    <p><i class='bx bxs-right-arrow'></i>Add payment details if not added</p>
-                    <p><i class='bx bxs-right-arrow'></i>Click <span style="color: #2910C6;">deposit</span> to get USDT in wallet</p>
-                </div>
-            </div>
+    </div>
+    </div>
+    <div class="faq-container">
+        <div class="faq-sec">
+            <h2>How to <span style="color: #2910C6;">deposit</span> USDT in wallet</h2>
+            <p><i class='bx bxs-right-arrow'></i>Scan QR Code or add wallet address</p>
+            <p><i class='bx bxs-right-arrow'></i>Enter specific amount in your currency</p>
+            <p><i class='bx bxs-right-arrow'></i>Select a payment method</p>
+            <p><i class='bx bxs-right-arrow'></i>Add payment details if not added</p>
+            <p><i class='bx bxs-right-arrow'></i>Click <span style="color: #2910C6;">deposit</span> to get USDT in wallet</p>
         </div>
     </div>
-
     <script src="js/index.js"></script>
 </body>
 </html>

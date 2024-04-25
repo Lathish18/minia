@@ -53,10 +53,6 @@ html {
     box-sizing: border-box;
     font-family: Neue Power;
 }
-body{
-    background: url(../assets/bg.png);
-    background-size: cover;
-}
 ::-webkit-scrollbar{
     display: none;
 }
@@ -67,6 +63,10 @@ header{
     align-items: center;
     justify-content: space-between;
     transition: 0.3s;
+}
+.top-container {
+    background: url(../assets/bg.png);
+    background-size: cover;
 }
 .logo{
     width: 3.9375rem;
@@ -99,13 +99,13 @@ header{
     color: #2910C6;
 }
 .signup{
-    border-radius: 0.3125rem;
-    padding: 0.6125rem 3.825rem;
+    border-radius: 0.5rem;
+    padding: 1.0625rem 4rem;
     font: normal normal normal 1.75rem/2.125rem Neue Power;
-    letter-spacing: 1.4px;
+    letter-spacing: 0.0875rem;
     color: #EDEEF9!important;
     background: #2910C6 0% 0% no-repeat padding-box;
-    box-shadow: 0px 0px 6px #00000052;
+    box-shadow: 0px 0px 0.375rem #00000052;
 }
 
 .container{
@@ -114,9 +114,10 @@ header{
     justify-content: space-between;
     padding: 0 2.8125rem 0px 8.6875rem;
     gap: 128px;
+    flex-direction: column;
 }
 .sell-sec{
-    width: 60%;
+    width: 50%;
     height: auto;
     padding: 5.5625rem 4.78515625rem 1.875rem 4.78515625rem;
     background: #EEF2FF 0% 0% no-repeat padding-box;
@@ -250,12 +251,13 @@ button{
     border-radius: 0.5rem;
 }
 .faq-container{
-    width: 60%;
     display: flex;
     justify-content: left;
+    padding: 8.6875rem;
 }
 .balance-sec{
     margin-bottom: 4.3125rem;
+    padding-left: 8.6875rem;
 }
 .balance-sec img{
     width: 4.0625rem;
@@ -276,12 +278,15 @@ button{
     color: #121C28;
 }
 .balance-sec .amount {
-    margin-left: 4.5625rem;
+    margin-left: 1rem;
     letter-spacing: 0.159375rem;
     color: #454C62;
     font-weight: medium;
     font-size: 3.1875rem;
     line-height: 3.8125rem;
+}
+.faq-sec {
+    width: 100%;
 }
 .faq-sec h2{
     font: normal normal bold 5.625rem/6.75rem Neue Power;
@@ -294,7 +299,7 @@ button{
     margin-right: 0.9375rem;
 }
 .faq-sec p{
-    font: normal normal bold 2.3125rem/2.75rem Neue Power;
+    font: normal normal bold 2.8rem/3rem Neue Power;
     letter-spacing: 0.115625rem;
     padding-bottom: 0.875rem;
     border-bottom: 1px solid #2910C6;

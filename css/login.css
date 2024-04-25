@@ -23,7 +23,7 @@ html {
       font-size: 14px;
     }
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1450px) {
     html {
       font-size: 12px;
     }
@@ -166,6 +166,14 @@ button{
     }
     .logo {
         margin-bottom: 6.35625rem;
+    }
+}
+@media(max-width:1450px){
+    .container{
+        padding: 6rem 8rem 6rem 5rem;
+    }
+    .logo {
+        margin-bottom: 5rem;
     }
 }
 
