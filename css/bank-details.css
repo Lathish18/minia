@@ -55,6 +55,7 @@ html {
 .container{
     width: 100%;
     height: 100vh;
+    padding: 40px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,6 +82,7 @@ h2{
     color: #2910C6;
     text-align: center;
     margin-bottom: 2.875rem;
+    font-weight: bold;
 }
 h3{
     font: normal normal bold 2rem/2.375rem Neue Power;
@@ -100,6 +102,7 @@ h3{
     margin-bottom: 2.125rem;
     position: relative;
     display: flex;
+    justify-content: space-between;
 }
 img{
     width: 1.5625rem;
@@ -109,8 +112,7 @@ img{
     top: 1.25rem;
 }
 input{
-    width: 100%;
-    height: 100%;
+    padding: 0 20rem 0 0;
     border: none;
     outline: none;
 }
@@ -120,6 +122,7 @@ select{
     cursor: pointer;
 }
 ::placeholder{
+    padding: 0 24rem 0 0;
     letter-spacing: 1.35px;
     color: #A9A9A9;
     font-size: 1.6875rem;
