@@ -52,9 +52,52 @@ html {
     box-sizing: border-box;
     font-family: Neue Power;
 }
+body{
+    background: url(../assets/bg.png);
+    background-size: cover;
+}
 ::-webkit-scrollbar{
     display: none;
 }
+header{
+    width: 100%;
+    padding: 4.0625rem 2.8125rem 10.5625rem 4.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+.logo{
+    width: 3.9375rem;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    column-gap: 5rem;
+}
+.navbar a{
+    font: normal normal normal 2.8125rem/3.375rem Neue Power;
+    letter-spacing: 0.084375rem;
+    color: #121C28;
+}
+.navbar a.active {
+    color: #2910C6;
+}
+.navbar a:hover{
+    color: #2910C6;
+}
+.icons{
+    display: flex;
+}
+#menu-icon{
+    display: none;
+}
+.bx-menu, .bxs-cog, .bx-x{
+    font-size: 3.5rem;
+    cursor: pointer;
+    color: #2910C6;
+}
+
 .container{
     width: 100%;
     height: 100vh;
@@ -75,18 +118,14 @@ html {
 .icon{
     text-align: right;
 }
-.bx{
-    font-size: 3rem;
-    color: #5447A4;
-}
-h2{
+.box h2{
     font: normal normal bold 3.3125rem/4rem Neue Power;
     letter-spacing: 2.65px;
     color: #2910C6;
     text-align: center;
     margin-bottom: 2.875rem;
 }
-h3{
+.box h3{
     font: normal normal bold 2rem/2.375rem Neue Power;
     letter-spacing: 1.6px;
     color: #000000;
@@ -95,7 +134,7 @@ h3{
 }
 .input-box{
     border: 1px solid #2910c6;
-    width: 95%;
+    width: 100%;
     height: 3.875rem;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #2910C6;
@@ -110,13 +149,13 @@ h3{
     width: 1.5625rem;
     height: 1.5625rem;
     position: absolute;
-    right: 0.625rem;
+    right: 1.425rem;
     top: 1.25rem;
 }
 input{
-    padding: 0 15rem 0 0;
     border: none;
     outline: none;
+    padding: 5px 0 8px;
 }
 select{
     border: none;
@@ -124,20 +163,10 @@ select{
     cursor: pointer;
 }
 ::placeholder{
-    padding: 0 24rem 0 0;
-    letter-spacing: 1.35px;
+    letter-spacing: 1px;
     color: #A9A9A9;
-    font-size: 1.6875rem;
+    font-size: 1.4875rem;
     font-family: Neue power;
-}
-button{
-    width: 11.3125rem;
-    height: 3.875rem;
-    text-align: center;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    margin-bottom: 10px;
 }
 .btn{
     display: flex;
@@ -148,6 +177,13 @@ button{
     color: #EDEEF9;
     font-size: 1.6875rem;
     font-family: Neue power;
+    width: 11.3125rem;
+    height: 3.875rem;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 .btn-1{
     background-color:  #c61022;
@@ -156,5 +192,9 @@ button{
     background-color: #2910c6;
 }
 
-
+@media(max-width:350px){
+    select{
+        margin-right: 10px;
+    }
+}
 
