@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Neue+Power:wght@400&display=swap">
+    <link rel="stylesheet" href="css/add-bank.css">
+    <title>Order History</title>
+</head>
+<body>
+    <header>
+        <div><img src="assets/dashboard.png" alt="logo" class="logo"></div>
+        <ul class="navbar" id="navBar">
+            <li><a href="#">Sell USDT</a></li>
+            <li><a href="#">Deposit USDT</a></li>
+            <li><a href="#">Fiat Withdrawal</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><i class="bx bx-x" id="menu-icon" onclick="navFunction()"></i></li>
+        </ul>
+        <div class="icons">
+            <i class='bx bxs-cog'></i>
+            <i class="bx bx-menu" id="menu-icon" onclick="navFunction()"></i>
+        </div>
+    </header>
+    <div class="detail-container">
+        <div class="bank-details">
+            <h1>Order History</h1>
+            <div class="detail-box">
+                <div class="detail">
+                    <h6><span style="color: #C61022;">Sell</span> USDT</h6>
+                    <p class="order-completed">Order Completed</p>
+                </div>
+                <div class="detail">
+                    <p class="store-name">Widi.Store</p>
+                    <p class="order-nmbr">
+                        Order Number: 205776074342565440 <img src="assets/copy.png" alt="" class="copy-img"> 
+                    </p>
+                </div>
+                <div class="detail">
+                    <p class="amount"><span style="color: #4422EF;">14.503 <i class='bx bx-rupee'></i></span> (173.46 $)</p>
+                    <p class="unread-msg">Unread Messages <i class='bx bx-message-dots'></i><i class='bx bxs-circle'></i></p>
+                </div>
+                <div class="detail">
+                    <p class="bank">Bank Transfer</p>
+                    <p class="last-update">06:50:22 11/12/2023</p>
+                </div>
+            </div>
+            <div class="detail-box">
+                <div class="detail">
+                    <h6><span style="color: #C61022;">Sell</span> USDT</h6>
+                    <p class="order-completed">Order Completed</p>
+                </div>
+                <div class="detail">
+                    <p class="store-name">Widi.Store</p>
+                    <p class="order-nmbr">
+                        Order Number: 205776074342565440 <img src="assets/copy.png" alt="" class="copy-img"> 
+                    </p>
+                </div>
+                <div class="detail">
+                    <p class="amount"><span style="color: #4422EF;">14.503 <i class='bx bx-rupee'></i></span> (173.46 $)</p>
+                    <p class="unread-msg">Unread Messages <i class='bx bx-message-dots'></i><i class='bx bxs-circle'></i></p>
+                </div>
+                <div class="detail">
+                    <p class="bank">Bank Transfer</p>
+                    <p class="last-update">06:50:22 11/12/2023</p>
+                </div>
+            </div>
+            <div class="detail-box">
+                <div class="detail">
+                    <h6><span style="color: #C61022;">Sell</span> USDT</h6>
+                    <p class="order-completed">Order Completed</p>
+                </div>
+                <div class="detail">
+                    <p class="store-name">Widi.Store</p>
+                    <p class="order-nmbr">
+                        Order Number: 205776074342565440 <img src="assets/copy.png" alt="" class="copy-img"> 
+                    </p>
+                </div>
+                <div class="detail">
+                    <p class="amount"><span style="color: #4422EF;">14.503 <i class='bx bx-rupee'></i></span> (173.46 $)</p>
+                    <p class="unread-msg">Unread Messages <i class='bx bx-message-dots'></i><i class='bx bxs-circle'></i></p>
+                </div>
+                <div class="detail">
+                    <p class="bank">Bank Transfer</p>
+                    <p class="last-update">06:50:22 11/12/2023</p>
+                </div>
+            </div>
+            <button class="add-bank-btn">Add more bank</button>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

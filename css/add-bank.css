@@ -43,6 +43,21 @@ html {
       font-size: 6px;
     }
 }
+@media screen and (max-width: 470px) {
+    html {
+      font-size: 5px;
+    }
+}
+@media screen and (max-width: 360px) {
+    html {
+      font-size: 3px;
+    }
+}
+@media screen and (max-width: 260px) {
+    html {
+      font-size: 2px;
+    }
+}
 
 *{
     padding: 0;
@@ -51,10 +66,6 @@ html {
     text-decoration: none;
     box-sizing: border-box;
     font-family: Neue Power;
-}
-body{
-    background: url(../assets/bg.png);
-    background-size: cover;
 }
 ::-webkit-scrollbar{
     display: none;
@@ -88,6 +99,7 @@ header{
 }
 .icons{
     display: flex;
+    column-gap: 1rem;
 }
 #menu-icon{
     display: none;
@@ -198,3 +210,200 @@ select{
     }
 }
 
+/* bank details */
+.detail-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bank-details{
+    margin-bottom: 50px;
+}
+.bank-details h1{
+    font: normal normal normal 3.3125rem/4rem Neue Power;
+    letter-spacing: 2.65px;
+    color: #2910C6;
+    margin-bottom: 3.125rem;
+}
+.detail-box{
+    width: 115.8125rem;
+    height: auto;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #2910C6;
+    border-radius: 8px;
+    padding: 2.5625rem;
+    margin-bottom: 3.375rem;
+}
+.detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.detail h6{
+    font: normal normal bold 2.375rem/2.875rem Neue Power;
+    letter-spacing: 1.9px;
+    color: #000000;
+    margin-bottom: 4px;
+}
+.action-btn, .last-update{
+    letter-spacing: 1.35px;
+    color: #000000;
+    font-size: 1.6875rem;
+    font-family: Neue power;
+    margin-bottom: 1px;
+    letter-spacing: 1.35px;
+    color: #000000;
+}
+.name ,.store-name{
+    font: normal normal normal 3.125rem/3.75rem Neue Power;
+    letter-spacing: 2.5px;
+    color: #000000;
+    margin-bottom: 4px;
+}
+.copy-img{
+    width: 1.5625rem;
+    height: 1.5625rem;
+}
+.unread-msg{
+    position: relative;
+}
+.bxs-circle{
+    position: absolute;
+    color: #C61022;
+    font-size: 5px;
+    border-radius: 50%;
+    right: 0;
+}
+.card{
+    font: normal normal normal 2.3125rem/2.75rem Neue Power;
+    letter-spacing: 1.85px;
+    color: #4422EF;
+    margin-bottom: 4px;
+}
+.bank{
+    font: normal normal normal 2.1875rem/2.625rem Neue Power;
+    letter-spacing: 1.75px;
+    color: #000000;
+}
+.bx-pencil, 
+.bx-trash
+{
+    color: #4422EF;
+}
+.order-completed{
+    letter-spacing: 1.35px;
+    color: #000000;
+    font-size: 1.6875rem;
+    background: #E7E3F8 0% 0% no-repeat padding-box;
+    border-radius: 13px;
+    padding: 5px 10px;
+}
+.amount{
+    letter-spacing: 1.85px;
+    font-size: 2.3125rem;
+    font-family: neue power;
+}
+.order-nmbr,.unread-msg{
+    font-family: neue power;
+    letter-spacing: 1.35px;
+    color: #000000;
+    font-size: 1.6875rem
+}
+.add-bank-btn{
+    width: 21.25rem;
+    height: 3.875rem;
+    background: #2910C6 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 6px #00000052;
+    border-radius: 8px;
+    font-size: 1.6875rem;
+    letter-spacing: 1.35px;
+    color: #EDEEF9;
+    font-family: Neue power;
+    border: none;
+    outline: none;
+    float: right;
+    cursor: pointer;
+}
+
+@media(max-width:750px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        display: block;
+        width: 50%;
+        height: 100%;
+        position: fixed;
+        text-align: center;
+        background-color: white;
+        top: 8px;
+        right: -100%;
+        transition: all 0.4s ease-in-out;
+        margin-top: -8px;
+        z-index: 10;
+    }
+    .navbar li{
+        padding: 20px 0;
+    }
+    .bank-details{
+        width: 100%;
+        padding: 20px;
+    }
+    .detail-box{
+        width: 100%;
+    }
+}
+
+
+/* Confirmation */
+.confirmation-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.confirmation-box{
+    width: 54.125rem;
+    height: auto;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 25px #00000052;
+    border-radius: 24px;
+    text-align: center;
+    padding: 8.125rem;
+}
+.confirmation-box h2{
+    font: normal normal normal 3.3125rem/4rem Neue Power;
+    letter-spacing: 2.65px;
+    color: #2910C6;
+    margin-bottom: 12px;
+}
+.confirmation-box p{
+    letter-spacing: 1.35px;
+    font-size: 1.6875rem;
+    font-family: neue power;
+    color: #121C28;
+    margin-bottom: 2.5625rem;
+}
+.confirmation-box i{
+    font-size: 12.5rem;
+    color:#13A32F;
+}
+
+@media(max-width:360px){
+    .confirmation-container{
+        padding: 20px;
+    }
+    .confirmation-box{
+        width: 100%;
+    }
+    .confirmation-box h2{
+        font-size: 15px;
+    }
+    .confirmation-box p{
+        font-size: 10px;
+    }
+    .confirmation-box i{
+        font-size: 40px;
+    }
+}
